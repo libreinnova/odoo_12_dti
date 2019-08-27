@@ -1,2 +1,3 @@
 # odoo_12_dti
- Library of Odoo external modules for this project
+
+This repository contains external modules for project odoo_12_dti
