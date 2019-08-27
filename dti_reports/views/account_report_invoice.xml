@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <template id="lbr_report_invoice_document" name="Inherit report invoice document" inherit_id="account.report_invoice_document">
+        <!-- START: Remove taxes column from report template -->
+        <xpath expr="//table[@name='invoice_line_table']/thead//t[@t-set='colspan'][1]" position="attributes">
+            <attribute name="t-value">5</attribute>
+        </xpath>
+        <xpath expr="//table[@name='invoice_line_table']/thead//th[6]" position="replace"/>
+        <xpath expr="//t[@name='account_invoice_line_accountable']/td[6]" position="replace"/>
+        <!-- END -->
+    </template>
+
+</odoo>
