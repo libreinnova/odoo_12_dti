@@ -22,7 +22,6 @@
         'sale'
     ],
     'data': [
-        'templates/assets.xml',
         'views/account_report_invoice.xml',
         'views/sale_report_saleorder.xml'
     ],
